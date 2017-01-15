@@ -4,3 +4,6 @@ version = "0.1.0"
 authors = ["Roger Andersen <hexjelly@hexjelly.com>"]
 
 [dependencies]
+reqwest = "0.3.0"
+maud = "*"
+maud_macros = "*"
