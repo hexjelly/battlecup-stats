@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["Roger Andersen <hexjelly@hexjelly.com>"]
 
 [dependencies]
+clap = { version = "~2.20.0", features = ["yaml"] }
+maud = "0.14.0"
+maud_macros = "0.14.0"
 reqwest = "0.3.0"
-maud = "*"
-maud_macros = "*"

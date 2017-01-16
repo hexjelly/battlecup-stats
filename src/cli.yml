@@ -1,0 +1,14 @@
+name: battlecup-stats
+version: "0.1.0"
+author: Roger Andersen <hexjelly@hexjelly.com>
+about: Create single HTML page with battlecup stats.
+args:
+  - INPUT:
+      help: Comma separated list of battle IDs to use.
+      required: true
+      index: 1
+  - title:
+      short: t
+      help: Title of HTML page.
+      takes_value: true
+      required: false
