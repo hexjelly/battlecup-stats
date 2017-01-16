@@ -3,7 +3,11 @@
 
 #[macro_use]
 extern crate clap;
+extern crate reqwest;
 extern crate maud;
+#[macro_use]
+extern crate serde_derive;
+extern crate serde_json;
 
 mod fetch;
 mod template;

@@ -8,3 +8,6 @@ clap = { version = "~2.20.0", features = ["yaml"] }
 maud = "0.14.0"
 maud_macros = "0.14.0"
 reqwest = "0.3.0"
+serde = "0.8.0"
+serde_derive = "0.8.0"
+serde_json = "0.8.0"
