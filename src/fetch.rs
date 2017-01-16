@@ -1,4 +1,4 @@
 
-pub fn get_battle_result() -> Result<(), &'static str> {
+pub fn get_battle_result(_battle_id: usize) -> Result<(), &'static str> {
     Ok(())
 }

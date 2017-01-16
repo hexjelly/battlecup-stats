@@ -1,7 +1,22 @@
-use maud::Markup;
+use std::collections::HashMap;
 
-pub fn template() -> Markup {
+use maud::{ DOCTYPE, Markup };
+
+pub fn template(title: &str, data: &HashMap<usize, String>) -> Markup {
     html! {
-        p { ":^)" }
+        (DOCTYPE)
+
+        html lang="en" {
+            head {
+              meta charset="utf-8" /
+              title (title)
+            }
+
+            body {
+                @for battle in data {
+                    p { (battle.0) ": " (battle.1) }
+                }
+            }
+        }
     }
 }
