@@ -1,4 +1,4 @@
-use std::collections::HashMap;
+use std::collections::BTreeMap;
 use reqwest::{ Client, Error };
 
 #[derive(Debug, Deserialize)]
@@ -9,7 +9,7 @@ pub struct BattleResult {
 }
 
 #[derive(Debug, Deserialize)]
-pub struct Positions(HashMap<String, BattleResult>);
+pub struct Positions(BTreeMap<u32, BattleResult>);
 
 pub fn get_battle_result(_battle_id: usize) -> Result<(), Error> {
     let client = Client::new()?;
